@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>MYSTERY OS</title>
+        <link rel='stylesheet' href='https://rawgit.com/imNicoSuarez/qiot-fonts/master/style.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,900,700'>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="ui.js"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+        <script src="https://kit.fontawesome.com/0a92abe1a6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="WebSiteContainer">
+            
+            <div class="WebSiteMid">
+                <div class="WebSiteMidContainer" id="Dashboard">
+                    <div class="WebSiteMidPainelBalance">
+                        <div class="WebSiteMidCoins">
+                            <p class="CointTitle"><span class="NameOfCoin">MYSTERYCOINS</span></p>
+                            <p class="CointAmount" id="TotalCoinsAmount">0.00000</p>
+                        </div>
+                        <div class="division"></div>
+                        <div class="WebSiteMidMoney">
+                            <p class="MoneyTitle">VALUE</p>
+                            <p class="MoneyAmount" id="TotalMoneyAmount">0.00<span class="CurrencyOfValue">$</span></p>
+                        </div>
+                    </div>
+                    <div class="WebSiteMidPainelServers">
+                        <ul id="filltable1" class="WebSiteMidPainelServersList">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="WebSiteMidContainer" id="Servers">
+                    <div class="WebSiteMidPainelServers">
+                        <ul id="filltable2" class="WebSiteMidPainelServersList">
+                            
+                        </ul>
+                    </div>
+
+                    <div class="WebSiteMidPainelServer">
+                        <div id="circulo" class="single-chart tempcircle">
+                            <svg id="circulocor" viewbox="0 0 36 36" class="circular-chart green">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path id="circulobar" class="circle"
+                                stroke-dasharray="0, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage" id="circulotemp">50º</text>
+                            </svg>
+                        </div>
+                        <p class="WebSiteMidPainelServerTitle"><span class="NameOfCoin">MYSTERYCOINS</span></br><span class="WebSiteMidPainelServerAmount">0.00111</span></p>
+                        <div class="WebSiteMidPainelServerInfo">
+                            <p class="WebSiteMidPainelServerInfoNumber"><i class="fas fa-server"></i> 2</p>
+                            <p class="WebSiteMidPainelServerInfoFan"><i class="fas fa-fan"></i> 1</p>
+                            <p class="WebSiteMidPainelServerInfoRam"><i class="fas fa-hdd"></i> 1</p>
+                            <p class="WebSiteMidPainelServerInfoBtn">OFF</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="WebSiteMidContainer" id="Shop">
+                    <div class="WebSiteMidPainelShopTop">
+                        <div class="WebSiteMidPainelShopSell">
+                            <div class="SellCoins"><p>SELL <span class="NameOfCoin">MYSTERYCOINS</span></p></div>
+                            <p class="SellCoinsInfo"><span id="TotalMoneyAmount2">0.00</span></p>
+                        </div>
+                        <div class="WebSiteMidPainelShopCart">
+                            <p class="CartNumber">0</p>
+                            <div class="CartBG">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="WebSiteMidPainelShopCartAmount">
+                            <p><span id="CartPrice">0</span><span class="CurrencyOfValue">$</span></p>
+                        </div>
+                    </div>
+                    <div class="WebSiteMidPainelShopProducts">
+                        <ul id="fillproductstable" class="WebSiteMidPainelShopProductsList">
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="WebSiteTop">
+                <div class="WebSiteLogoContainer">
+                    <div class="WebSiteLogo"></div>
+                </div>
+                <div class="WebSiteTabs">
+                    <div class="WebSiteTab ServersClick"><p>LES SERVEURS</p></div>
+                    <div class="WebSiteTab DashboardClick WebSiteTabSelect"><p>TABLEAU DE BORD</p></div>
+                    <div class="WebSiteTab ShopClick"><p>BOUTIQUE</p></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="ConsoleContainer">
+            <div class="ConsoleLogs">
+                <div class="ConsoleLogsText">
+                    /* Console On */
+                </div>
+            </div>
+            <input class="ConsoleCommandLine">
+
+            </input>
+        </div> -->
+    </body>
+</html>

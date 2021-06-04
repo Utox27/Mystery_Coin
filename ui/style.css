@@ -1,0 +1,708 @@
+body {
+    font-family: 'arial';
+    overflow: hidden;
+    cursor: default;
+    display: none;
+    margin: 0px;
+}
+
+
+.ConsoleContainer {
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.4vw;
+    color: white;
+}
+
+.ConsoleLogsText {
+    padding: 1vh;
+    line-height: 3vh;
+}
+
+
+.ConsoleLogs {
+    width: 100%;
+    height: 95%;
+    overflow: scroll;
+}
+
+.ConsoleLogs::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.ConsoleCommandLine {
+    border: 0px;
+    border-top: 0.2vh solid #888888;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5%;
+    color: white;
+    padding: 0.6vh;
+    outline: none;
+    background-color: transparent;
+    font-size: 2vh;
+}
+
+
+.WebSiteContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.WebSiteTop {
+    width: 100vw;
+    height: 7vh;
+    background-color: #2779BD;
+    position: fixed;
+    display: flex;
+}
+
+.WebSiteMid {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+}
+
+.WebSiteLogoContainer {
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+}
+
+.WebSiteLogo {
+    width: 5vh;
+    height: 5vh;
+    background-image: url("./logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2vw;
+    border: 0.15vw solid black;
+    margin-left: 1vw;
+    margin-top: 0.7vh;
+}
+
+.WebSiteTabs {
+    width: 100vw;
+    height: 7vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.WebSiteTab {
+    width: 9vw;
+    height: 7vh;
+    background-color: transparent;
+    color: white;
+}
+
+.WebSiteTab p {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    margin: 0px;
+    margin-top: 2.5vh;
+    padding: 0px;
+}
+
+.WebSiteTab:hover {
+    background-color: #3685c5;
+}
+
+.WebSiteTabSelect {
+    box-sizing: border-box;
+    border-bottom: 0.6vh solid #3e9ae6;
+}
+
+
+.WebSiteMidContainer {
+    width: 100vw;
+    height: 93vh;
+    margin-top: 7vh;
+    background-color: white;
+}
+
+.WebSiteMidPainelBalance {
+    width: 70vw;
+    height: 30vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    box-shadow: 0.0vw 0.0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    border-radius: 0.2vw;
+    display: flex;
+}
+
+
+.WebSiteMidCoins {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.CointTitle {
+    width: 100%;
+    height: 20%;
+    padding-top: 6vh;
+    text-align: center;
+    font-size: 4vw;
+    color: #2779BD;
+    margin: 0px;
+}
+
+.CointAmount {
+    width: 100%;
+    height: 20%;
+    padding-top: 7vh;
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(0, 162, 0);
+    margin: 0px;
+}
+
+
+.WebSiteMidMoney {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+.MoneyTitle {
+    width: 100%;
+    height: 20%;
+    padding-top: 6vh;
+    text-align: center;
+    font-size: 4vw;
+    color: #2779BD;
+    margin: 0px;
+}
+
+.MoneyAmount {
+    width: 100%;
+    height: 20%;
+    padding-top: 7vh;
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(0, 162, 0);
+    margin: 0px;
+}
+
+.division {
+    width: 0.3%;
+    height: 80%;
+    margin-top: 2%;
+    border-radius: 1vw;
+    background-color: #e8e8e8;
+}
+
+
+.WebSiteMidPainelServers {
+    width: 70vw;
+    height: 45vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    box-shadow: 0.0vw 0.0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    border-radius: 0.2vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.WebSiteMidPainelServersList {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.WebSiteMidPainelServersList::-webkit-scrollbar {
+    width: 0px;
+}
+
+.ServerLine {
+    width: 100%;
+    height: 12%;
+    background-color: transparent;
+    margin-bottom: 0.1vh;
+    display: flex;
+}
+
+.ServerLine:hover {
+    background-color: #e8e8e8;
+}
+
+.ServerStatus {
+    width: 7%;
+    height: 100%;
+}
+
+.ServerStatus p {
+    font-size: 2.5vh;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 1.2vh;
+    font-weight: bold;
+}
+
+.off {
+    background-color: red;
+}
+
+.on {
+    background-color: rgb(0, 182, 0);
+}
+
+
+.ServerInfo {
+    width: 93%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5vh;
+}
+
+.ServerInfo p {
+    margin: 0px;
+    padding-top: 1.1vh;
+    color: #747474;
+}
+
+
+.ServerInfoTemprature {
+    padding-right: 1vw;
+}
+
+.ServerInfoFan {
+    padding-right: 1vw;
+}
+
+.ServerInfoRam {
+    padding-right: 1vw;
+}
+
+.ServerInfoCoins {
+    padding-right: 1vw;
+}
+
+.ServerInfoNumber {
+    padding-right: 1vw;
+}
+
+#Dashboard {
+    display: block;
+}
+
+#Servers {
+    display: none;
+}
+
+
+
+.WebSiteMidPainelServer {
+    width: 70vw;
+    height: 35vh;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    box-shadow: 0.0vw 0.0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    border-radius: 0.2vw;
+    display: flex;
+    overflow: hidden;
+    transform: translateY(1000px);
+    transition: transform 1s;
+}
+
+
+.tempcircle {
+    margin-top: 5vh;
+    width: 27%;
+}
+
+
+.WebSiteMidPainelServerTitle {
+    text-align: center;
+    width: 50%;
+    height: 70%;
+    font-size: 4vw;
+    margin: 0px;
+    margin-top: 3.5%;
+    background-color: transparent;
+    color: #2779BD;
+    line-height: 13vh;
+}
+
+.WebSiteMidPainelServerAmount {
+    color: rgb(0, 162, 0);
+    font-size: 3vw;
+}
+
+.WebSiteMidPainelServerInfo {
+    width: 23%;
+    height: 100%;
+    background-color: transparent;
+    line-height: 8vh;
+}
+
+
+.WebSiteMidPainelServerInfoFan {
+    color: #747474;
+    font-size: 5vh;
+    padding-left: 2vw;
+    margin: 0px;
+}
+
+.WebSiteMidPainelServerInfoRam {
+    color: #747474;
+    font-size: 5vh;
+    padding-left: 2vw;
+    margin: 0px;
+}
+
+.WebSiteMidPainelServerInfoNumber {
+    color: #747474;
+    font-size: 5vh;
+    padding-left: 2vw;
+    margin: 0px;
+    margin-top: 1vh;
+}
+
+.WebSiteMidPainelServerInfoBtn {
+    font-size: 4vh;
+    background-color: red;
+    padding-left: 2vw;
+    color: white;
+    margin: 0px;
+    width: 30%;
+    height: 20%;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 0px;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+
+.WebSiteMidPainelShopTop {
+    width: 70vw;
+    height: 7vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    border-radius: 0.2vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.WebSiteMidPainelShopSell {
+    width: 27vw;
+    height: 85%;
+    margin-top: 0.5vh;
+    margin-left: 0.2vw;
+    box-shadow: 0vw 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    border-radius: 0.2vw;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.SellCoins {
+    background-color: #2779bd;
+    width: 60%;
+    height: 100%;
+    border-radius: 0.2vw 0px 0px 0.2vw;
+}
+
+.SellCoins:hover {
+    background-color: #2167a0;
+}
+
+.SellCoins p {
+    color: white;
+    font-size: 1.6vw;
+    text-align: center;
+    margin: 0px;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+
+.SellCoinsInfo {
+    color: #0000008c;
+    font-size: 1.6vw;
+    margin: 0px;
+    margin-top: 3%;
+    margin-left: 1vw;
+    width: 33%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boldtext {
+    font-weight: bold;
+    color: #2779BD;
+}
+
+
+.WebSiteMidPainelShopCart {
+    width: 9vw;
+    height: 85%;
+    margin-top: 0.5vh;
+    margin-left: 33.6vw;
+    box-shadow: 0vw 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    border-radius: 0.2vw;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.CartNumber {
+    color: #0000008c;
+    font-size: 1.6vw;
+    margin: 0px;
+    margin-top: 9%;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.CartBG {
+    color: white;
+    font-size: 1.6vw;
+    margin: 0px;
+    padding-top: 9%;
+    width: 50%;
+    text-align: center;
+    background-color: #2779bd;
+}
+
+.CartBG:hover {
+    background-color: #2167a0;
+}
+
+
+
+
+.WebSiteMidPainelShopProducts {
+    width: 70vw;
+    height: 66vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    box-shadow: 0vw 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    border-radius: 0.2vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.WebSiteMidPainelShopProductsList {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.WebSiteMidPainelShopProductsList::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+.ProductName {
+    font-size: 1.8vw;
+    margin: 0px;
+    margin-left: 0.5vw;
+    margin-top: 1.8%;
+    color: #747474;
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.Price {
+    color: rgb(0, 162, 0);
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.btns {
+    width: 11%;
+    height: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    padding-top: 1.3%;
+}
+
+.btn {
+    width: 30%;
+    height: 67%;
+    box-shadow: 0vw 0vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    background-color: rgb(249 249 249);
+    border-radius: 0.2vw;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+
+.btn p {
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 1.6vw;
+}
+
+.pamount {
+    width: 38%;
+    height: 52%;
+    margin: 0px;
+    font-size: 1.3vw;
+    background-color: #e6e6e6;
+    text-align: center;
+    padding-top: 8%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+
+.plus {
+    margin-top: 19%;
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.minus {
+    margin-top: 10%;
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+
+
+.containerProductInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+
+.WebSiteMidPainelShopCartAmount {
+    position: absolute;
+    width: 8vw;
+    height: 4vh;
+    background-color: white;
+    box-shadow: 0vw 0.1vw 0.2vw 0.1vw rgba(0, 0, 0, 0.2);
+    margin-top: 6.5vh;
+    margin-left: 61.3vw;
+    border-radius: 0vw 0vw 0.2vw 0.2vw;
+}
+
+
+.WebSiteMidPainelShopCartAmount p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.3vw;
+    color: #0000008c;
+    font-weight: bold;
+    margin-top: 0.3vw;
+}
+
+
+
+
+
+
+
+
+
+
+.single-chart {
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  /* animation: progress 1s ease-out forwards; */
+  transition: stroke-dasharray 1s;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #61eb34;
+}
+
+.circular-chart.red .circle {
+  stroke: #e61c1c;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
